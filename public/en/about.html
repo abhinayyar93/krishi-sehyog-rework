@@ -122,26 +122,49 @@
 
         <div class="container">
             <div class="row"> 
-                <div class="aboutus-contact-form">
-                    <div class="aboutus-form-title">Contact Us Form</div>
-                    <div class="aboutus-form-fields">
-                        <div class="aboutus-form-field">
-                            <label for="exampleFormControlInput1" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter your name">
-                        </div>
-                        <div class="aboutus-form-field">
-                                <label for="exampleFormControlInput2" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="abc@example.com">
-                        </div>
-                        <div class="aboutus-form-field">
-                            <label for="exampleFormControlInput3" class="form-label">Phone No.</label>
-                            <input type="number" class="form-control" id="exampleFormControlInput3" placeholder="Enter your mobile no.">
-                        </div>
-                        <div class="aboutus-form-submit">
-                            <button type="submit" class="btn aboutus-form-submit-btn">Submit</button>
-                        </div>
-                    </div>
+                <div class="contactus-form">
+                    <div class="form-heading">Contact Form</div>
+                    <p class="form-subtext">Do you have any questions or queries? We would love you to get in touch with us.</p>
+                    <p class="form-required-text">Fields marked with an asterisk(*) are required.</p>
+                    <form class="row g-3 needs-validation">
+                            <div class="col-md-6 col-sm-12 col-xs-12 contactus-field">
+                              <label for="first-name" class="form-label">First name*</label>
+                              <input type="text" class="form-control" id="first-name" placeholder="Enter Your First Name" required>
+                            </div>
+                            <div class="col-md-6 col-sm-12 col-xs-12 contactus-field">
+                              <label for="last-name" class="form-label">Last name*</label>
+                              <input type="text" class="form-control" id="last-name" placeholder="Enter Your Last Name" required>
+                            </div>
+                            <div class="col-md-6 col-sm-12 col-xs-12 contactus-field">
+                              <label for="email" class="form-label">Email*</label>
+                              <input type="email" class="form-control" id="email" placeholder="Enter Your Email ID" required>
+                            </div>
+                            <div class="col-md-6 col-sm-12 col-xs-12 contactus-field">
+                                <label for="phone" class="form-label">Phone No.</label>
+                                <input type="number" class="form-control" maxlength="10" minlength="10" placeholder="Phone No." id="phone">
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12 contactus-field">
+                                    <label for="message" class="form-label">Message(Optional)</label>
+                                    <textarea type="text" class="form-control" id="message"  rows="4" cols="50" placeholder="Enter your message here"></textarea>
+                                </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12 contactus-form-submit">
+                              <button class="btn contactus-form-submit-btn" type="button">Submit form</button>
+                            </div>
+                    </form>
                 </div>
+            </div>
+        </div>
+
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn" style="display: none;">Open Modal</button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p class="model-text"></p>
             </div>
         </div>
 
@@ -156,16 +179,16 @@
                                 <a class="nav-link" aria-current="page" href="/">Homepage</a>
                             </li>
                             <li class="nav-item col-md-3 col-sm-12 col-xs-12">
-                                <a class="nav-link" href="/buyerform">Buyer form</a>
+                                <a class="nav-link" href="/en/buyerform">Buyer form</a>
                             </li>
                             <li class="nav-item col-md-3 col-sm-12 col-xs-12">
-                                <a class="nav-link" href="/sellerform">Seller form</a>
+                                <a class="nav-link" href="/en/sellerform">Seller form</a>
                             </li>
                             <li class="nav-item col-md-2 col-sm-12 col-xs-12">
-                                <a class="nav-link" href="/about">About us</a>
+                                <a class="nav-link" href="/en/about">About us</a>
                             </li>
                             <li class="nav-item col-md-2 col-sm-12 col-xs-12">
-                                <a class="nav-link" href="/contact">Contact us</a>
+                                <a class="nav-link" href="/en/contact">Contact us</a>
                             </li>
                         </ul>
                     </div>
@@ -175,8 +198,8 @@
                                 Follow us
                             </div>
                             <div class="social-media">
-                                <i class="fa fa-instagram"></i>
-                                <i class="fa fa-facebook-square"></i>
+                                <a href="https://instagram.com/krishi.sehyog"><i class="fa fa-instagram"></i></a>
+                                <a href="https://www.facebook.com/krishi.sehyog"><i class="fa fa-facebook-square"></i></a>
                             </div>
                         </div>
                     </div>

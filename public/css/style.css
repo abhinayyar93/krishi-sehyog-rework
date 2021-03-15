@@ -100,7 +100,7 @@ body .visibility-hidden {
 }
 
 .navbar-nav>li>a:hover {
-    background: #63B746;
+    background: #88C872;
     color: #fff;
 }
 
@@ -124,6 +124,12 @@ body .visibility-hidden {
     color: #FF3D00;
 }
 
+.lan_switch {
+    border: 1px solid #88C872;
+    color: #88C872;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 767px) {
     .nav-logo {
         padding: 3px 0 0 15px;
@@ -139,7 +145,7 @@ body .visibility-hidden {
 
     .navbar-header {
         padding-bottom: 3px;
-        background: #63B746;
+        background: #88C872;
     }
 
     .navbar-fixed-top {
@@ -181,7 +187,7 @@ body .visibility-hidden {
     }
 
     .navbar-nav .nav-link {
-        color: #63B746;
+        color: #88C872;
         border-bottom: 1px solid #808080ad;
         border-radius: 0;
         text-align: right;
@@ -300,7 +306,7 @@ body .visibility-hidden {
 }
 
 .krishi-description-title {
-    color: #63B746;
+    color: #88C872;
     text-align: center;
     font-size: 30px;
     padding: 50px 0 20px;
@@ -309,7 +315,7 @@ body .visibility-hidden {
 
 @media screen and (max-width: 767px) {
     .krishi-description-section {
-        background: #63B746;
+        background: #88C872;
         padding-bottom: 30px;
     }
 
@@ -348,7 +354,7 @@ body .visibility-hidden {
 /* What other's buying section */
 
 .what-other-section {
-    background: #63B746;
+    background: #88C872;
     color: #fff;
     text-align: center;   
 }
@@ -487,7 +493,7 @@ body .visibility-hidden {
 
 @media screen and (max-width: 767px) {
     .platform-section {
-        background: #63B746;
+        background: #88C872;
         padding-bottom: 45px;
         margin-bottom: 0;
     }
@@ -512,12 +518,16 @@ body .visibility-hidden {
     .platform-image {
         padding: 0;
     }
+
+    .platform-button-section {
+        width: 100%;
+    }
 }
 
 /* Footer */
 
 .footer {
-    background: #63B746;
+    background: #88C872;
     padding: 20px 0;
     color: #fff;
 }
@@ -536,7 +546,7 @@ body .visibility-hidden {
 }
 
 .footer-nav .nav-link:hover{
-    background: #63B746;
+    background: #88C872;
 }
 
 .footer-followus {
@@ -551,16 +561,24 @@ body .visibility-hidden {
     cursor: pointer;
 }
 
+.social-media a {
+    color: #fff;
+}
+
 @media screen and (max-width: 767px) {
     .footer {
         background: #fff;
-        color: #63B746;
+        color: #88C872;
     }
 
     .footer-nav .nav-link{
-        color: #63B746;
+        color: #88C872;
         padding: 3px 35px;
         text-align: left;
+    }
+
+    .social-media a {
+        color: #88C872;
     }
 
     .footer-nav {
@@ -597,7 +615,7 @@ body .visibility-hidden {
 
 .aboutus-text .aboutus-mission-heading,
 .aboutus-text .aboutus-commitments-heading {
-    color: #63B746;
+    color: #88C872;
     font-size: 16px;
     margin-bottom: 20px;
     font-weight: 700;
@@ -623,7 +641,7 @@ body .visibility-hidden {
 /* Founder Section */
 
 .founders-section {
-    background: #63B746;
+    background: #88C872;
     padding: 0 150px;
 }
 
@@ -775,7 +793,7 @@ body .visibility-hidden {
     width: 50%;
     background: #fff;;
     box-shadow: 0px 0px 10px 7px #8080804a;
-    height: 440px;
+    height: 480px;
 }
 
 .buyersform-text-form .buyersform-text {
@@ -790,7 +808,7 @@ body .visibility-hidden {
 }
 
 .buyersform-text-form .buyersform-submit {
-    margin: 15px 0;
+    margin: 30px 0;
     width: 100%;
     padding: 10px 0;
     background: #ff3D00;
@@ -833,7 +851,7 @@ body .visibility-hidden {
     }
 
     .buyersform-text-form {
-        height: 370px;
+        height: 402px;
         padding: 10px 25px;
         border-radius: 10px;
         width: 100%;   
@@ -853,7 +871,7 @@ body .visibility-hidden {
     margin-top: 61px;
     background-image: url("../image/misc/seller-banner.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 65%;
+    background-size: 100% 60%;
 }
 
 .sellers-banner-image {
@@ -865,7 +883,7 @@ body .visibility-hidden {
     width: 50%;
     background: #fff;;
     box-shadow: 0px 0px 10px 7px #8080804a;
-    height: 760px;
+    height: 790px;
 }
 
 .sellersform-text-form .sellersform-text {
@@ -892,7 +910,7 @@ body .visibility-hidden {
 .sellersform-content {
     display: flex;
     flex-direction: row;
-    margin: 500px 0 120px;
+    margin: 325px 0 120px;
 }
 
 .sellersform-text-section {
