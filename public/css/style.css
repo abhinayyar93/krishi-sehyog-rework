@@ -1,0 +1,971 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body .visibility-hidden {
+    display: none;
+}
+
+.padding-zero {
+    padding: 0;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 100px;
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .model-text.error {
+    color: red;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #000;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+@media (min-width: 768px) {
+    .hidden-desktop {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hidden-mobile {
+        display: none;
+    }
+
+    .modal-content {
+        width: 80%;
+        padding: 60px 20px;
+        margin: 50% auto;
+    }
+}
+
+/* Navigation Bar */
+
+.nav-logo {
+    padding: 3px;
+}
+
+.logo {
+    width: 55px;
+}
+
+.navbar-fixed-top {
+    background: #fff;
+}
+
+.nav-link {
+    color: rgba(0,0,0,.76);
+}
+
+.navbar-nav>li>a {
+    margin: 15px;
+    padding: 5px 17px;
+    border-radius: 5px;
+}
+
+.navbar-nav>li>a:hover {
+    background: #63B746;
+    color: #fff;
+}
+
+.nav-buyer {
+    background: #FFDACE;
+    color: #FF3D00;
+}
+
+.navbar-nav .nav-buyer:hover {
+    background: #FF3D00;
+    color: #FFDACE;
+}
+
+.nav-seller {
+    background: #FF3D00;
+    color: #FFDACE;
+}
+
+.navbar-nav .nav-seller:hover {
+    background: #FFDACE;
+    color: #FF3D00;
+}
+
+@media screen and (max-width: 767px) {
+    .nav-logo {
+        padding: 3px 0 0 15px;
+    }
+
+    .navbar-fixed-top .navbar-nav {
+        margin: 0;
+    }
+
+    .navbar-fixed-top .navbar-collapse.collapse {
+        max-height: 100%;
+    }
+
+    .navbar-header {
+        padding-bottom: 3px;
+        background: #63B746;
+    }
+
+    .navbar-fixed-top {
+        background: none;
+    }
+
+    .navbar-header.open {
+        background: #fff;
+    }
+
+    .navbar-header .navbar-toggle .icon-bar {
+        background: #fff;
+        height: 3px;
+        border-radius: 5px;
+        transition: all 300ms ease;
+    }
+
+    .navbar-header .navbar-toggle.open .icon-bar.first {
+        transform: rotate(45deg);
+        position: relative;
+        left: 0px;
+        top: 6px;
+        transition: all 300ms ease;
+        background: #808080ad;
+    }
+
+    .navbar-header .navbar-toggle.open .icon-bar.middle {
+        visibility: hidden;
+        transition: all 10ms ease;
+    }
+
+    .navbar-header .navbar-toggle.open .icon-bar.last {
+        transform: rotate(135deg);
+        position: relative;
+        left: 0px;
+        bottom: 7px;
+        transition: all 300ms ease;
+        background: #808080ad;
+    }
+
+    .navbar-nav .nav-link {
+        color: #63B746;
+        border-bottom: 1px solid #808080ad;
+        border-radius: 0;
+        text-align: right;
+        font-size: 24px;
+        font-weight: 700;
+        padding: 25px 15px;
+        margin: 0 15px;
+    }
+
+    .navbar-nav .nav-link.last-nav {
+        border: 0;
+    }
+
+    .navbar-collapse {
+        background: #fff;
+    }
+}
+
+  /* Hero Banner */
+
+.hero-banner{
+    background-image: url('../image/homepage/banner.jpg');
+    height: 751px;
+    width: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 55px 0 0;
+}
+
+.hero-content {
+    float: right;
+    padding: 35px 85px;
+    background: #000000c7;;
+    max-width: 715px;
+    margin: 231px 105px;
+    color: #fff;
+}
+
+.hero-text {
+    font-size: 46px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.btn-signup {
+    float: right;
+    font-size: 26px;
+    padding: 10px 40px;
+    margin-top: 30px;
+    background: #FF3D00;
+    color: #fff;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 767px) {
+    .hero-banner {
+        background-image: url('../image/homepage/banner-mobile.png');
+        height: 712px;
+        background-size: 100%;
+    }
+
+    .hero-content {
+        color: #fff;
+        margin: 0 auto;
+        max-width: 300px;
+        position: relative;
+        top: 55px;
+        text-align: center;
+        padding: 35px 45px;
+        float: none;
+    }
+    
+    .hero-text {
+        font-size: 26px;
+    }
+
+    .btn-signup {
+        font-size: 22px;
+        padding: 10px 25px;
+        margin-top: 16px;
+        background: #FF3D00;
+        border-radius: 8px;
+        float: none;
+    }
+}
+
+/* Krishi Description Section*/
+
+.krishi-description {
+    margin: 30px 0;
+}
+
+.krishi-description-image .point_image {
+    width: 100%;
+    box-shadow: 0px 0px 10px 7px #8080804a;
+}
+
+.krishi-description-container {
+    padding-bottom: 30px;
+}
+
+.krishi-description-text {
+    margin: 90px 0;
+    text-align: center;
+}
+
+.krishi-description-text .point-text {
+    color: #ff3D00;
+    font-size: 16px;
+    font-weight: 700;    
+}
+
+.krishi-description-text .point-subtext {
+    max-width: 85%;
+    margin: 18px auto;
+}
+
+.krishi-description-title {
+    color: #63B746;
+    text-align: center;
+    font-size: 30px;
+    padding: 50px 0 20px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+    .krishi-description-section {
+        background: #63B746;
+        padding-bottom: 30px;
+    }
+
+    .krishi-description-title {
+        color: #fff;
+        font-size: 24px;
+        padding: 35px 26px 20px;
+    }
+
+    .krishi-description {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column-reverse;
+        margin: 0 30px;
+    }
+
+    .krishi-description.reverse-text {
+        flex-direction: column;
+    }
+
+    .krishi-description .krishi-description-text {
+        margin: 25px 0 0;
+        padding: 0;
+    }
+
+    .krishi-description-text .point-subtext {
+        max-width: 100%;
+    }
+
+    .krishi-description-text .point-text {
+        font-size: 18px;
+        font-weight: normal;
+    }
+}
+
+/* What other's buying section */
+
+.what-other-section {
+    background: #63B746;
+    color: #fff;
+    text-align: center;   
+}
+
+.others-content {
+    text-align: center;
+    padding: 0 120px;
+    text-transform: uppercase;  
+}
+
+.others-content h3 {
+    font-size: 32px;
+}
+
+.others-content .title {
+    margin: 35px 0 0;
+}
+
+.others-image-section {
+    margin: 35px 0;
+}
+
+.others-image-section img{
+    width: 175px;
+}
+
+.others-image-section .others-title{
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 767px) {
+    .what-other-section {
+        background: #fff;
+        color: #ff3D00;
+        text-align: center;   
+    }
+
+    .others-content {
+        padding: 0;
+    }
+
+    .others-content h3 {
+        font-size: 30px;
+    }
+
+    .others-image-section img{
+        width: 80px;
+        border-radius: 50%;
+    }
+}
+
+/* Platform Works */
+
+.platform-title {
+    text-align: center;
+    color: #ff3D00;
+    margin: 60px 0 40px;
+    text-transform: uppercase;
+    font-size: 32px;
+}
+
+.platform-works-heading {
+    margin: 10px 25px;
+    font-size: 24px;
+}
+
+.platform-works-points {
+    font-size: 16px;
+}
+
+.farmers-platform,
+.buyers-platform {
+    padding: 0 0 0 70px;
+}
+
+@media screen and (max-width: 767px) {
+    .platform-title {
+        font-size: 30px;
+    }
+
+    .farmers-platform,
+    .buyers-platform {
+        padding: 0 18px;
+    }
+
+    .buyers-platform {
+        margin-bottom: 40px;
+    }
+}
+
+/* Platform Section */
+
+.platform-section {
+    margin-bottom: 75px;
+}
+
+.platform-heading {
+    color: #ff3D00;
+    text-align: center;
+    margin: 60px 0 40px;
+    text-transform: uppercase;
+}
+
+.platform-heading h3 {
+    font-size: 32px;
+}
+
+.platform-images {
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.platform-image {
+    width: 100%;
+    padding: 0 40px;
+}
+
+.platform-title-joinus {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.platform-button-section {
+    width: 60%;
+    margin: 20px auto;
+    text-align: center;
+    background: #FF3D00;
+    border-radius: 5px;
+}
+
+.platform-button-section .platform-button {
+    color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+    .platform-section {
+        background: #63B746;
+        padding-bottom: 45px;
+        margin-bottom: 0;
+    }
+
+    .platform-heading {
+        margin: 20px 0;
+        padding: 0 40px;
+    }
+
+    .platform-heading h3 {
+        font-size: 24px;
+    }
+
+    .platform-title-joinus {
+        font-size: 16px;
+    }
+
+    .platform-images {
+        max-width: 100%;
+    }
+
+    .platform-image {
+        padding: 0;
+    }
+}
+
+/* Footer */
+
+.footer {
+    background: #63B746;
+    padding: 20px 0;
+    color: #fff;
+}
+
+.justify-content-center,
+.footer-copyright {
+    text-align: center;
+}
+
+.footer-nav {
+    padding: 0 15%;
+}
+
+.footer-nav .nav-link{
+    color: #fff;
+}
+
+.footer-nav .nav-link:hover{
+    background: #63B746;
+}
+
+.footer-followus {
+    max-width: 100px;
+    text-align: center;
+    margin: 45px auto;
+    font-size: 20px;
+}
+
+.footer-followus i {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+    .footer {
+        background: #fff;
+        color: #63B746;
+    }
+
+    .footer-nav .nav-link{
+        color: #63B746;
+        padding: 3px 35px;
+        text-align: left;
+    }
+
+    .footer-nav {
+        padding: 0;
+    }
+    
+    .footer-copyright {
+        font-size: 10px;
+        margin: 15px 0;
+    }
+
+    .footer-followus {
+        margin: 35px auto;
+    }
+}
+
+/* About us Page */
+
+.aboutus-banner {
+    margin: 61px 0 0;
+    background-image: url('../image/aboutus/aboutus-banner.jpg');
+    height: 300px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.aboutus-text  {
+    margin: 50px 0;
+}
+
+.aboutus-subtext {
+    margin-bottom: 25px;
+}
+
+.aboutus-text .aboutus-mission-heading,
+.aboutus-text .aboutus-commitments-heading {
+    color: #63B746;
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.aboutus-commitments-subtext {
+    margin-bottom: 10px;
+}
+
+.aboutus-commitments-subtext .aboutus-commitments-title {
+    color: #ff3D00;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.aboutus-image {
+    height: 500px;
+    margin: 120px 0;
+}
+
+
+/* Founder Section */
+
+.founders-section {
+    background: #63B746;
+    padding: 0 150px;
+}
+
+.founders-image {
+    text-align: center;
+}
+
+.founders-image,
+.founders-content {
+    margin: 40px 0;
+
+}
+
+.founder-image {
+    max-width: 75%;
+    width: 100%;
+}
+
+.founder-heading {
+    color: #ff3D00;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.founder-text {
+    color: #fff;
+}
+
+/* About us Contact Form */
+
+.aboutus-contact-form {
+    max-width: 50%;
+    margin: 85px auto;
+}
+
+.aboutus-form-title {
+    text-align: center;
+    font-size: 24px;
+    margin: 35px 0;
+}
+
+.aboutus-form-field {
+    margin-bottom: 15px;
+}
+
+.aboutus-form-submit {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.aboutus-form-submit-btn {
+    padding: 10px 30px;
+    background: #ff3D00;
+    color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+    .aboutus-banner {
+        background-image: url('../image/aboutus/aboutus-banner-mobile.png');
+        height: 705px;
+        margin: 56px 0 0;
+    }
+
+    .aboutus-contact-form {
+        max-width: none;
+        margin: 45px 15px;
+    }
+
+    .aboutus-image-mobile {
+        width: 100%;
+    }
+
+    .founders-section {
+        padding: 0 20px;
+    }
+
+    .founders-image, 
+    .founders-content {
+        margin: 20px 0;
+    }
+}
+
+/* Contact Us Page form */
+
+.contactus-form {
+    padding: 0px 150px;
+}
+
+.contactus-form .form-heading {
+    text-align: left;
+    font-size: 24px;
+    padding: 25px 0;
+    font-weight: 700;
+}
+
+.contactus-form-submit-btn {
+    padding: 10px 30px;
+    background: #ff3D00;
+    color: #fff;
+}
+
+.contactus-form-submit {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.contactus-banner {
+    margin: 61px 0;
+}
+
+.contactus-banner-img {
+    width: 100%;
+    padding: 0 30px;
+}
+
+.contactus-field {
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 767px) { 
+    .contactus-form {
+        padding: 0px 20px;
+    }
+
+    .contactus-form .form-heading {
+        margin-bottom: 20px;
+    }
+
+    .contactus-field {
+        padding-bottom: 10px;
+    }
+}
+
+/* Buyers Form Page */
+
+.buyers-banner {
+    margin-top: 61px;
+    background-image: url("../image/misc/buyers-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 65%;
+}
+
+.buyers-banner-image {
+    width: 100%;
+}
+
+.buyersform-text-form {
+    padding: 10px 65px;
+    width: 50%;
+    background: #fff;;
+    box-shadow: 0px 0px 10px 7px #8080804a;
+    height: 440px;
+}
+
+.buyersform-text-form .buyersform-text {
+    text-align: center;
+    font-size: 28px;
+    margin: 30px 0;
+    color: #ff3D00;
+}
+
+.buyersform-text-form .buyersform-field {
+    margin: 15px 0;
+}
+
+.buyersform-text-form .buyersform-submit {
+    margin: 15px 0;
+    width: 100%;
+    padding: 10px 0;
+    background: #ff3D00;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+}
+
+.buyersform-content {
+    display: flex;
+    flex-direction: row;
+    margin: 500px 0 120px;
+}
+
+.buyersform-text-section {
+    width: 50%;
+    padding: 75px 105px 75px 0;
+}
+
+.buyersform-text-section1 {
+    font-size: 38px;
+    padding: 20px 0 70px;
+    color: #fff;
+}
+
+.buyersform-text-section2 {
+    font-size: 22px;
+    padding: 70px 0 20px;
+}
+
+@media screen and (max-width: 767px) {  
+    .buyers-banner {
+        margin-top: 56px;
+        background-position: center;
+        background-size: auto;
+    }
+
+    .buyersform-content {
+        margin: 130px 10px;
+    }
+
+    .buyersform-text-form {
+        height: 370px;
+        padding: 10px 25px;
+        border-radius: 10px;
+        width: 100%;   
+    }
+
+    .buyersform-text-form .buyersform-field {
+        border: 0;
+        box-shadow: none;
+        border-bottom: 1px solid #000;
+        border-radius: 0;
+    }
+}
+
+/* Sellers Form Page */
+
+.sellers-banner {
+    margin-top: 61px;
+    background-image: url("../image/misc/seller-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 65%;
+}
+
+.sellers-banner-image {
+    width: 100%;
+}
+
+.sellersform-text-form {
+    padding: 10px 65px;
+    width: 50%;
+    background: #fff;;
+    box-shadow: 0px 0px 10px 7px #8080804a;
+    height: 760px;
+}
+
+.sellersform-text-form .sellersform-text {
+    text-align: center;
+    font-size: 28px;
+    margin: 30px 0;
+    color: #ff3D00;
+}
+
+.sellersform-text-form .sellersform-field {
+    margin: 15px 0;
+}
+
+.sellersform-text-form .sellersform-submit {
+    margin: 30px 0;
+    width: 100%;
+    padding: 10px 0;
+    background: #ff3D00;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+}
+
+.sellersform-content {
+    display: flex;
+    flex-direction: row;
+    margin: 500px 0 120px;
+}
+
+.sellersform-text-section {
+    width: 50%;
+    padding: 75px 105px 75px 0;
+}
+
+.sellersform-text-form .sellersform-field-textbox {
+    height: 85px;
+}
+
+.sellersform-text-section1 {
+    font-size: 38px;
+    padding: 130px 0 70px;
+    color: #fff;
+}
+
+.sellersform-text-section2 {
+    font-size: 22px;
+    padding: 70px 0 20px;
+}
+
+
+.custom-upload-address-section,
+.custom-upload-identity-section {
+    display: flex;
+    cursor: pointer;
+}
+
+.custom-upload-address-section .custom-fa,
+.custom-upload-identity-section .custom-fa {
+    position: relative;
+    bottom: 5px;
+    padding: 0 5px;
+    color: red;
+    cursor: pointer;   
+}
+
+.address-proof,
+.identity-proof {
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 767px) {  
+    .buyers-banner {
+        background-position: center;
+        background-size: auto;
+    }
+
+    .sellersform-content {
+        margin: 130px 10px;
+    }
+
+    .sellers-banner {
+        margin-top: 56px;
+        background-size: auto;
+    }
+
+    .sellersform-text-form {
+        width: 100%;
+        padding: 10px 25px;
+        border-radius: 10px;
+        height: 690px;
+    }
+
+    .sellersform-text-form .sellersform-field {
+        border: 0;
+        box-shadow: none;
+        border-bottom: 1px solid #000;
+        border-radius: 0;
+    }
+
+    .sellersform-text-form .sellersform-field.sellersform-field-textbox {
+        border: 1px solid;
+    }
+}
