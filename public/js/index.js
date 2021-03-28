@@ -124,25 +124,41 @@ $(document).ready(function(){
 		})
 	});
 
+
+
 	$(document).on('click', '.sellersform-submit', function(req, res){
-		var formdata = {};
-		formdata.name = $('#sellersform-name').val();
-		formdata.businessname = $('#sellersform-business-name').val();
-		formdata.email = $('#sellersform-email').val();
-		formdata.dob = $('#sellersform-dob').val();
-		formdata.message = $('#sellersform-message').val();
-		formdata.addressProof = $('#upload-address-proof').val();
-		formdata.identityProof = $('#upload-identity-proof').val();
-		formdata.typecrop = $('#sellersform-typecrop').val();
+		event.preventDefault();
+
+        // Get form
+        var form = $('#fileUploadForm')[0];
+
+        // Create an FormData object 
+        var data = new FormData(form);
+		data.append('name', $("#sellersform-name").val());
+		data.append('business_name', $("#sellersform-business-name").val());
+		data.append('email', $("#sellersform-email").val());
+		data.append('dob', $("#sellersform-dob").val());
+		data.append('address', $("#sellersform-address").val());
+		data.append('crop', $("#sellersform-typecrop").val());
 		$.ajax({
 			method: 'post',
-			url: '/sendbuyerform',
-			data: formdata,
+			url: '/sendsellerform',
+			data: data,
+			contentType: false, 
 			dataType: 'json',
+			cache : false,
+			processData: false,
 			success: function(res) {
 				openModel(res.status, res.message);
 				$('#myBtn').trigger('click');
+				console.log("seller form = ", res); 
+			},
+			error: function(err) {
+				openModel(res.status, res.message);
+				$('#myBtn').trigger('click');
+				console.log("seller form err = ", err); 
 			}
+			
 		})
 	});
 
